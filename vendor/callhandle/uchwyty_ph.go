@@ -19,7 +19,7 @@ import (
 
 func AddRecordPassword(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	if sessiontools.CheckSessionUser(r.Header.Get("sessiontopgoid")) {
-		fmt.Println("dupas")
+		//fmt.Println("dupas")
 		//Zmien_haslo(id int, stare_haslo string, nowe_haslo string) (status bool)
 		bodyBytes, _ := ioutil.ReadAll(r.Body)
 		nowe_haslo := mstr.PasswordRecord{}
